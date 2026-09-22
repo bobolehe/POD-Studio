@@ -1,7 +1,7 @@
 from pathlib import Path
 p=Path(r'D:\codex\聚鼎设计页功能调研');s=(p/'index.before-v5.html').read_text(encoding='utf-8-sig')
 a=s.index('// One coverage mask');b=s.index('function render()',a)
-s=s[:a]+(p/'template-v5.js').read_text(encoding='utf-8-sig')+'\n'+s[b:]
+s=s[:a]+(p/'web/template-v5.js').read_text(encoding='utf-8-sig')+'\n'+s[b:]
 s=s.replace('ctx.clearRect(0,0,1000,1000);ctx.drawImage(p.img,0,0,1000,1000);if(!art){', "if(!art){TemplateRenderer.draw(ctx,p,null,{view:$('#layerView').value});")
 s=s.replace('drawWarp(p);', "TemplateRenderer.draw(ctx,p,surface,{wrap:$('#wrap').checked,view:$('#layerView').value});")
 s=s.replace('>实时预览</span>', '>V5 · 分层模板待验收</span>')

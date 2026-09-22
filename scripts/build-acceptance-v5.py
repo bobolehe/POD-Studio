@@ -17,5 +17,5 @@ for key,label in [('landscape','横版'),('portrait','竖版')]:
  for kind,title in [('black','纯黑'),('red','纯红'),('checker','棋盘格与边框')]:html+=f'<figure><figcaption>{title}</figcaption><img src="v5-{key}-{kind}.png"></figure>'
  html+='</div>'
 html+='''<h2>待确认的视觉验收项</h2><ul><li>顶部与底部没有连续浅色露底线。</li><li>四角平顺，左侧包边连接自然，无突出尖角。</li><li>新光影与厚度观感可以接受。</li><li>用实际业务素材导出后，在 100% 和 200% 下也可接受。</li></ul><p>测试图下载：<a href="v5-landscape-export.png" download>横版 PNG</a> · <a href="v5-portrait-export.png" download>竖版 PNG</a></p><p>这是商品效果预览，不是生产打印展开图；尚未实现其他场景、3D 旋转或精确实物尺寸建模。</p></main></html>'''
-(p/'acceptance-v5.html').write_text(html,encoding='utf-8')
+(p/'tests/acceptance-v5.html').write_text(html,encoding='utf-8')
 

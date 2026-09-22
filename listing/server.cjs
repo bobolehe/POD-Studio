@@ -32,7 +32,7 @@ http.createServer(async(req,res)=>{try{
   }finally{working=false}
  }
  if(req.method!=='GET')return json(res,405,{error:'GET required'});
- const p=decodeURIComponent(pathname),file=path.resolve(root,'.'+(p==='/'?'/listing.html':p));
+ const p=decodeURIComponent(pathname),file=p.startsWith('/listing/outputs/')?path.resolve(root,'.'+p):require('../server/public-path.cjs')(root,p==='/'?'/listing.html':p);
  if(p.startsWith('/library-data/')||!file.startsWith(root+path.sep)||p.includes('node_modules')||/\.(?:py|cjs|mjs|xlsm)$/i.test(p)&&!p.startsWith('/listing/outputs/'))return json(res,403,{error:'Not public'});
  const ext=path.extname(file);res.setHeader('Content-Type',({'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.xlsm':'application/vnd.ms-excel.sheet.macroEnabled.12'})[ext]||'application/octet-stream');res.setHeader('Cache-Control','no-store');
  if(ext==='.xlsm')res.setHeader('Content-Disposition',"attachment; filename*=UTF-8''"+encodeURIComponent(path.basename(file)));

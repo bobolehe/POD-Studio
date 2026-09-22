@@ -15,4 +15,4 @@ for key,filename,left,right,yL,yR in [('portrait','MQ19201067-portrait.jpg',269,
  assert outside==0,(key,outside)
  assert improved>0,(key,improved)
  rows.append(dict(product=key,outer_shadow_changed_pixels=outside,neutral_edge_pixels_now_colored=improved))
-print(json.dumps(rows,ensure_ascii=False));(p/'edge-test-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps(rows,ensure_ascii=False));(p/'tests/edge-test-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')

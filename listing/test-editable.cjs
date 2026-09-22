@@ -1,4 +1,4 @@
-const assert=require('node:assert/strict'),{build}=require('./model.cjs'),{normalize}=require('../variant-config.js'),fs=require('fs'),path=require('path');
+const assert=require('node:assert/strict'),{build}=require('./model.cjs'),{normalize}=require('../web/variant-config.js'),fs=require('fs'),path=require('path');
 const base={...require('./sample-input.json'),product:'portrait',variantSchema:2};
 const variants=[{frame:'unframed',widthIn:10.5,heightIn:15.75,price:19.95,quantity:0},{frame:'framed',widthIn:12,heightIn:18,price:29.5},{frame:'framed',widthIn:20,heightIn:30,price:39.5}];
 for(const market of ['UK','CA']){

@@ -9,4 +9,4 @@ for key,name,x0,x1,y0,y1 in [('portrait','MQ19201067-portrait.jpg',257,269,907,9
  results.append(dict(product=key,outside_corner_pixels_changed=len(changed),pass_test=not changed))
  assert not changed,(key,changed)
 print(json.dumps(results,ensure_ascii=False))
-(p/'corner-test-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
+(p/'tests/corner-test-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')

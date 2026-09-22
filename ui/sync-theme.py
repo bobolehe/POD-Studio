@@ -11,7 +11,7 @@ nav_pages=[item for item in pages if item[0]!='batch.html']
 def navigation(filename):
  return ''.join('<a href="'+('http://127.0.0.1:8767/'+f if f in ['listing.html','library.html'] else 'http://127.0.0.1:8766/'+('' if f=='index.html' else f))+'"'+(' aria-current="page"' if f==filename else '')+'>'+t+'</a>' for f,t,_ in nav_pages)
 for filename,title,subtitle in pages:
- p=ROOT/filename;s=p.read_text('utf8')
+ p=ROOT/'web'/filename;s=p.read_text('utf8')
  if '<!-- unified-ui -->' in s:
   s=re.sub(r'(<nav class="app-nav"[^>]*>).*?</nav>',lambda m:m[1]+navigation(filename)+'</nav>',s,flags=re.S)
   s=re.sub(r'<!-- unified-theme -->.*?<!-- /unified-theme -->','<!-- unified-theme --><style>'+css+'</style><!-- /unified-theme -->',s,flags=re.S)

@@ -1,5 +1,5 @@
 const markets=require('./markets.json');
-const {SIZES,normalize}=require('../variant-config.js');
+const {SIZES,normalize}=require('../web/variant-config.js');
 const IMAGE_COLS=['X','Y','Z','AA','AB','AC','AD','AE','AF'];
 function text(v,max=500){v=String(v??'').trim();if(v.length>max||/^[=+@]/.test(v)||/[\x00-\x08\x0b\x0c\x0e-\x1f]/.test(v))throw Error('文字过长、以公式符号开头或含无效字符');return v}
 function num(v,name,integer=false){if(v===''||v==null)return null;const n=Number(v);if(!Number.isFinite(n)||n<0||(integer&&!Number.isInteger(n)))throw Error(name+'需要非负'+(integer?'整数':'数字'));return n}
