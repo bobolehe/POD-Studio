@@ -1,0 +1,133 @@
+{
+  "done": 18,
+  "rows": [
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/MQ19201068/white.png",
+      "scene": "white",
+      "sku": "MQ19201068",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/MQ19201067/white.png",
+      "scene": "white",
+      "sku": "MQ19201067",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/QC1104087/tin1.png",
+      "scene": "tin1",
+      "sku": "QC1104087",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/JJ0519910/tin1.png",
+      "scene": "tin1",
+      "sku": "JJ0519910",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/JJ0519911/tin1.png",
+      "scene": "tin1",
+      "sku": "JJ0519911",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/GY09031325/frame1.png",
+      "scene": "frame1",
+      "sku": "GY09031325",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/GY09031323/frame1.png",
+      "scene": "frame1",
+      "sku": "GY09031323",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/MG17601058/tin1.png",
+      "scene": "tin1",
+      "sku": "MG17601058",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "001_测试素材/GY09031681/tin1.png",
+      "scene": "tin1",
+      "sku": "GY09031681",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/MQ19201068/white.png",
+      "scene": "white",
+      "sku": "MQ19201068",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/MQ19201067/white.png",
+      "scene": "white",
+      "sku": "MQ19201067",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/QC1104087/tin1.png",
+      "scene": "tin1",
+      "sku": "QC1104087",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/JJ0519910/tin1.png",
+      "scene": "tin1",
+      "sku": "JJ0519910",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/JJ0519911/tin1.png",
+      "scene": "tin1",
+      "sku": "JJ0519911",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/GY09031325/frame1.png",
+      "scene": "frame1",
+      "sku": "GY09031325",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/GY09031323/frame1.png",
+      "scene": "frame1",
+      "sku": "GY09031323",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/MG17601058/tin1.png",
+      "scene": "tin1",
+      "sku": "MG17601058",
+      "status": "success"
+    },
+    {
+      "file": "测试素材.png",
+      "output": "002_测试素材/GY09031681/tin1.png",
+      "scene": "tin1",
+      "sku": "GY09031681",
+      "status": "success"
+    }
+  ],
+  "success": 18,
+  "total": 18
+}

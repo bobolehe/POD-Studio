@@ -1,0 +1,94 @@
+[
+  {
+    "bytes": 345932,
+    "height": 1000,
+    "name": "QC1104087-tin1-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin1",
+    "width": 1000
+  },
+  {
+    "bytes": 595692,
+    "height": 1000,
+    "name": "QC1104087-tin2-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin2",
+    "width": 1000
+  },
+  {
+    "bytes": 634132,
+    "height": 1000,
+    "name": "QC1104087-tin3-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin3",
+    "width": 1000
+  },
+  {
+    "bytes": 1483473,
+    "height": 1000,
+    "name": "QC1104087-tin4-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin4",
+    "width": 1000
+  },
+  {
+    "bytes": 666679,
+    "height": 1000,
+    "name": "QC1104087-tin5-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin5",
+    "width": 1000
+  },
+  {
+    "bytes": 507563,
+    "height": 1000,
+    "name": "QC1104087-tin6-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin6",
+    "width": 1000
+  },
+  {
+    "bytes": 1003039,
+    "height": 1000,
+    "name": "QC1104087-tin7-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin7",
+    "width": 1000
+  },
+  {
+    "bytes": 980593,
+    "height": 1000,
+    "name": "QC1104087-tin8-mockup.png",
+    "pass": true,
+    "product": "cup",
+    "scene": "tin8",
+    "width": 1000
+  },
+  {
+    "pass": true,
+    "product": "landscape",
+    "scene": "white"
+  },
+  {
+    "pass": true,
+    "product": "portrait",
+    "scene": "white"
+  },
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "scene": "tin1"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "scene": "tin1"
+  }
+]

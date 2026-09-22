@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>批量生成商品效果图</title><style>*{box-sizing:border-box}body{font:15px system-ui;background:#f4f6fa;color:#213249;margin:24px}main{max-width:1100px;margin:auto}section{background:white;border-radius:12px;padding:20px;margin:16px 0}button,a,input{font:inherit}button{padding:9px 15px;margin:5px;cursor:pointer}button:disabled{cursor:default;opacity:.5}#templates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}fieldset{border:1px solid #ccd5e2;min-width:0}label{display:block;padding:4px}legend{font-weight:bold}small{color:#59687a}progress{width:100%;height:22px}#log{white-space:pre-wrap;max-height:220px;overflow:auto}#preview{width:240px;max-width:100%}iframe{display:none}@media(max-width:800px){#templates{grid-template-columns:1fr}}</style><!-- unified-theme --><style>:root{--ink:#17263b;--muted:#66758a;--accent:#2868d7;--line:#e1e7ef;--soft:#eef4fd;--paper:#fff;--bg:#f3f5f8;--radius:14px}
+*{box-sizing:border-box}
+body{margin:0!important;padding:0!important;max-width:none!important;background:var(--bg);color:var(--ink);font:14px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+.app-header{background:#17263b;color:white;padding:20px max(24px,calc((100vw - 1240px)/2));display:flex;justify-content:space-between;align-items:center;gap:20px}
+.app-brand{color:white!important;font-size:20px;font-weight:700;text-decoration:none;white-space:nowrap}
+.app-header span{font-size:12px;color:#b4c3d7}
+.app-nav{display:flex;gap:8px;flex-wrap:wrap;background:white;padding:12px max(24px,calc((100vw - 1240px)/2));border-bottom:1px solid var(--line)}
+.app-nav a{padding:8px 16px;border-radius:8px;color:#58687b;font-weight:600;text-decoration:none;white-space:nowrap}
+.app-nav a:hover{background:#f4f6fa;color:var(--accent)}
+.app-nav a[aria-current=page]{background:var(--soft);color:var(--accent)}
+.app-content{max-width:1240px;margin:28px auto!important;padding:0 24px!important;min-width:0}
+body:not(.workbench) .app-content{display:block}
+.page-heading{margin:0 0 20px}
+.page-heading h1{font-size:25px;font-weight:700;letter-spacing:-.5px;margin:0 0 6px}
+.page-heading p{margin:0;color:var(--muted);font-size:14px}
+h2{font-size:17px;margin:0 0 18px;font-weight:650}
+section,.panel,.stage{background:white;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 3px 16px #17263b04;padding:24px;margin:0 0 20px;min-width:0}
+.workbench main{grid-template-columns:320px minmax(0,1fr);gap:24px}
+.workbench .stage{align-self:start;position:sticky;top:16px}
+.workbench .stage canvas{width:min(100%,560px)}
+.workbench .panel{padding:20px}
+.workbench .panel>a{display:none!important}
+.workbench .section{border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
+.workbench .product{font-size:13px;padding:8px;border:1px solid var(--line);border-radius:10px}
+.workbench .product.active{border:2px solid var(--accent);padding:7px;background:var(--soft)}
+.workbench .product img{border-radius:6px;display:block}
+.workbench .product small{font-size:11px}
+.workbench .stage-top{gap:12px;flex-wrap:wrap;margin-bottom:12px}
+p,.hint,small{color:var(--muted);line-height:1.75}
+p{font-size:13px;margin:10px 0 16px}
+a{color:var(--accent);text-underline-offset:3px}
+button,input,textarea,select{font:inherit}
+button{display:inline-block;min-height:40px;padding:9px 16px;margin:4px 4px 4px 0;border:1px solid #cfd9e6;border-radius:8px;background:#fff;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
+button:hover:not(:disabled){border-color:var(--accent);background:var(--soft)}
+button:disabled{opacity:.45;cursor:not-allowed}
+button.primary,#start,#generate,#download,#export{background:var(--accent);border-color:var(--accent);color:white}
+button.primary:hover:not(:disabled),#start:hover:not(:disabled),#generate:hover:not(:disabled),#download:hover:not(:disabled),#export:hover:not(:disabled){background:#2059ba;color:white}
+button#stop{color:#b44435}
+input:not([type=checkbox]):not([type=range]),select,textarea{max-width:100%;border:1px solid #cfd9e6;border-radius:8px;padding:9px 11px;background:#fff;color:var(--ink);min-height:40px}
+input[type=text],textarea,select{width:100%}
+input[type=file]{display:block;width:100%;padding:9px!important;background:#f8fafd!important;font-size:13px!important;margin:8px 0}
+input::file-selector-button{background:#eaf0fa;border:0;border-radius:5px;padding:6px 12px;margin-right:12px;color:#285286;cursor:pointer}
+input[type=checkbox],input[type=range],progress{accent-color:var(--accent)}
+:is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #7eabef;outline-offset:3px}
+label{display:block;font-size:13px;font-weight:500;margin:12px 0 8px}
+label>input:not([type=checkbox]),label>select,label>textarea{margin-top:6px}
+textarea{min-height:88px;resize:vertical}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 20px}
+.scroll{overflow:auto;border:1px solid var(--line);border-radius:10px;margin:18px 0}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{background:#f4f7fc;color:#526479;font-weight:600;white-space:nowrap}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafcff}
+td input{width:84px}
+#rows td{min-width:100px;overflow-wrap:anywhere}
+#rows td:nth-child(3){min-width:220px}
+.warn{color:#81571a;background:#fff8e9;border:1px solid #f1dfb8;border-radius:9px;padding:12px 16px}
+#status,#estimate,#fileSummary{background:#f3f7fd;border:1px solid #e1eaf7;color:#425d80;padding:11px 14px;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere}
+#issues{font-size:13px;color:#81571a;line-height:1.9;max-height:200px;overflow:auto}
+#issues:empty,#log:empty{display:none}
+progress{display:block;width:100%;height:10px;margin:18px 0;border-radius:10px;overflow:hidden}
+progress::-webkit-progress-bar{background:#e9eef5}
+progress::-webkit-progress-value{background:var(--accent);border-radius:10px}
+#log{font:12px/1.7 ui-monospace,monospace;white-space:pre-wrap;overflow:auto;max-height:220px;padding:12px;border-radius:8px;background:#f6f8fb}
+#templates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+fieldset{border:1px solid var(--line);border-radius:10px;min-width:0;padding:12px}
+fieldset legend{font-size:13px;font-weight:600;color:#425d80;padding:0 6px}
+fieldset label{font-weight:400;margin:6px 0}
+summary{cursor:pointer;padding:12px;background:#f6f8fb;border-radius:8px;color:#425d80}
+#gallery{display:flex;flex-wrap:wrap;gap:10px}
+#gallery img{width:140px;margin:0;border:1px solid var(--line);border-radius:8px}
+.app-footer{text-align:center;font-size:12px;color:#8491a2;padding:20px 24px 32px}
+@media(max-width:800px){.app-header{padding:16px 20px}.app-header span{display:none}.app-nav{padding:10px 16px;gap:4px}.app-nav a{font-size:13px;padding:8px 11px}.app-content{margin:20px auto!important;padding:0 16px!important}.workbench main{grid-template-columns:1fr}.workbench .stage{grid-row:1;position:static}.grid{grid-template-columns:1fr}#templates{grid-template-columns:1fr}section,.panel,.stage{padding:18px}.page-heading h1{font-size:22px}}
+
+[hidden]{display:none!important}
+</style><!-- /unified-theme --><body class="workflow"><!-- unified-ui --><header class="app-header"><a class="app-brand" href="http://127.0.0.1:8766/">产品效果工作台</a><span>本地制作 · 图片生成 · 商品表格</span></header><nav class="app-nav" aria-label="功能导航"><a href="http://127.0.0.1:8766/">单张工作台</a><a href="http://127.0.0.1:8766/product-batch.html">整产品批量生成</a><a href="http://127.0.0.1:8767/library.html">生成列表</a><a href="http://127.0.0.1:8767/listing.html">商品表格生成</a></nav><main class="app-content"><div class="page-heading"><h1>自选模板生成</h1><p>自由组合素材与模板，生成后打包下载 ZIP。输出 1000×1000 PNG，自动居中铺满；刷新或关闭页面前请先下载结果。</p></div><section><h2>01 / 选择多张素材</h2><input id="files" type="file" multiple accept="image/png,image/jpeg"><p id="fileSummary">尚未选择素材</p><small>单张≤50MB，宽高≤15000px。每批最多200个组合，ZIP累计最多300MB；超过后请分批生成。</small></section><section><h2>02 / 勾选产品及模板</h2><button id="all" disabled>全选模板</button><button id="none" disabled>清空选择</button><div id="templates">模板加载中…</div></section><section><h2>03 / 生成并下载</h2><p id="estimate">正在加载模板</p><button id="start" disabled>开始生成</button><button id="stop" disabled>停止（保留已生成）</button><button id="download" disabled>下载ZIP</button><progress id="progress" max="1" value="0"></progress><p id="status" role="status">等待模板加载</p><img id="preview" alt="最近生成的效果预览" hidden><pre id="log"></pre></section></main><iframe id="engine" src="/"></iframe><script src="batch.js"></script><footer class="app-footer">本地制作 · 原始素材保留 · 商品表格为待审核草稿</footer></body></html>

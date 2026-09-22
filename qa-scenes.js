@@ -1,0 +1,6 @@
+(async()=>{const tests=[],images={};$('#demo').click();const originalArt=art;
+for(const product of ['landscape','portrait']){document.querySelector(`[data-product="${product}"]`).click();$('#scene').value='white';$('#scene').dispatchEvent(new Event('change'));const baseline=canvas.toDataURL();
+for(const scene of ['white','dark','light']){$('#scene').value=scene;$('#scene').dispatchEvent(new Event('change'));images[product+'-'+scene]=canvas.toDataURL();tests.push({name:product+' '+scene,pass:art===originalArt&&canvas.width===(scene==='white'?1000:scenes[scene].img.width)&&canvas.height===(scene==='white'?1000:scenes[scene].img.height)&&!!(await new Promise(r=>canvas.toBlob(r)))});
+if(scene!=='white'){const t=sceneTransform(products[current]),p=products[current],center=point(.5,.5),rect=canvas.getBoundingClientRect(),uv=eventUV({clientX:rect.left+(t.dx+(center[0]-t.sx)*t.scale)*rect.width/canvas.width,clientY:rect.top+(t.dy+(center[1]-t.sy)*t.scale)*rect.height/canvas.height});tests.push({name:product+' '+scene+' drag coordinates',pass:Math.abs(uv[0]-.5)<1e-6&&Math.abs(uv[1]-.5)<1e-6});}}
+$('#scene').value='white';$('#scene').dispatchEvent(new Event('change'));tests.push({name:product+' white unchanged',pass:baseline===canvas.toDataURL()});}
+return {tests,images}})()

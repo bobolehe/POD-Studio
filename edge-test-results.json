@@ -1,0 +1,12 @@
+[
+  {
+    "product": "portrait",
+    "outer_shadow_changed_pixels": 0,
+    "neutral_edge_pixels_now_colored": 382
+  },
+  {
+    "product": "landscape",
+    "outer_shadow_changed_pixels": 0,
+    "neutral_edge_pixels_now_colored": 645
+  }
+]

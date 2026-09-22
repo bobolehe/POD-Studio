@@ -1,0 +1,22 @@
+[
+  {
+    "pair": "landscape-light",
+    "comparison": "site screenshot 600x600 vs local PNG downsampled to 600x600",
+    "mean_absolute_channel_difference_0_to_255": 1.634
+  },
+  {
+    "pair": "landscape-dark",
+    "comparison": "site screenshot 600x600 vs local PNG downsampled to 600x600",
+    "mean_absolute_channel_difference_0_to_255": 1.967
+  },
+  {
+    "pair": "portrait-light",
+    "comparison": "site screenshot 600x600 vs local PNG downsampled to 600x600",
+    "mean_absolute_channel_difference_0_to_255": 1.303
+  },
+  {
+    "pair": "portrait-dark",
+    "comparison": "site screenshot 600x600 vs local PNG downsampled to 600x600",
+    "mean_absolute_channel_difference_0_to_255": 1.366
+  }
+]

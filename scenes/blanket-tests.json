@@ -1,0 +1,169 @@
+[
+  {
+    "pass": true,
+    "test": "upload"
+  },
+  {
+    "bytes": 795651,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin1",
+    "width": 1000
+  },
+  {
+    "bytes": 402397,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin2",
+    "width": 1000
+  },
+  {
+    "bytes": 648651,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin3",
+    "width": 1000
+  },
+  {
+    "bytes": 728303,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin4",
+    "width": 1000
+  },
+  {
+    "bytes": 1280402,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin5",
+    "width": 1000
+  },
+  {
+    "bytes": 1065563,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin6",
+    "width": 1000
+  },
+  {
+    "bytes": 1093918,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin7",
+    "width": 1000
+  },
+  {
+    "bytes": 1402839,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketVertical",
+    "scene": "tin8",
+    "width": 1000
+  },
+  {
+    "pass": true,
+    "product": "blanketVertical",
+    "test": "crop-rotate-reset"
+  },
+  {
+    "bytes": 857346,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin1",
+    "width": 1000
+  },
+  {
+    "bytes": 352702,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin2",
+    "width": 1000
+  },
+  {
+    "bytes": 645493,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin3",
+    "width": 1000
+  },
+  {
+    "bytes": 1210612,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin4",
+    "width": 1000
+  },
+  {
+    "bytes": 1283525,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin5",
+    "width": 1000
+  },
+  {
+    "bytes": 652629,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin6",
+    "width": 1000
+  },
+  {
+    "bytes": 1048518,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin7",
+    "width": 1000
+  },
+  {
+    "bytes": 1098894,
+    "height": 1000,
+    "pass": true,
+    "product": "blanketHorizontal",
+    "scene": "tin8",
+    "width": 1000
+  },
+  {
+    "pass": true,
+    "product": "blanketHorizontal",
+    "test": "crop-rotate-reset"
+  },
+  {
+    "pass": true,
+    "product": "landscape",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "portrait",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "cup",
+    "test": "regression"
+  }
+]

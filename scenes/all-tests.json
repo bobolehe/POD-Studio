@@ -1,0 +1,100 @@
+[
+  {
+    "bytes": 93949,
+    "options": 7,
+    "pass": true,
+    "product": "landscape",
+    "scene": "white"
+  },
+  {
+    "bytes": 1111883,
+    "options": 7,
+    "pass": true,
+    "product": "landscape",
+    "scene": "light"
+  },
+  {
+    "bytes": 1325273,
+    "options": 7,
+    "pass": true,
+    "product": "landscape",
+    "scene": "dark"
+  },
+  {
+    "bytes": 1186595,
+    "options": 7,
+    "pass": true,
+    "product": "landscape",
+    "scene": "scene3"
+  },
+  {
+    "bytes": 1076048,
+    "options": 7,
+    "pass": true,
+    "product": "landscape",
+    "scene": "scene4"
+  },
+  {
+    "bytes": 1037508,
+    "options": 7,
+    "pass": true,
+    "product": "landscape",
+    "scene": "scene5"
+  },
+  {
+    "bytes": 843447,
+    "options": 7,
+    "pass": true,
+    "product": "landscape",
+    "scene": "scene6"
+  },
+  {
+    "bytes": 79891,
+    "options": 7,
+    "pass": true,
+    "product": "portrait",
+    "scene": "white"
+  },
+  {
+    "bytes": 844327,
+    "options": 7,
+    "pass": true,
+    "product": "portrait",
+    "scene": "light"
+  },
+  {
+    "bytes": 827064,
+    "options": 7,
+    "pass": true,
+    "product": "portrait",
+    "scene": "dark"
+  },
+  {
+    "bytes": 1474199,
+    "options": 7,
+    "pass": true,
+    "product": "portrait",
+    "scene": "scene3"
+  },
+  {
+    "bytes": 1481760,
+    "options": 7,
+    "pass": true,
+    "product": "portrait",
+    "scene": "scene4"
+  },
+  {
+    "bytes": 751253,
+    "options": 7,
+    "pass": true,
+    "product": "portrait",
+    "scene": "scene5"
+  },
+  {
+    "bytes": 1011185,
+    "options": 7,
+    "pass": true,
+    "product": "portrait",
+    "scene": "scene6"
+  }
+]

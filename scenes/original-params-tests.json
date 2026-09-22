@@ -1,0 +1,42 @@
+[
+  {
+    "pass": true,
+    "test": "landscape light dimensions, source mapping, png"
+  },
+  {
+    "pass": false,
+    "test": "landscape light reset"
+  },
+  {
+    "pass": true,
+    "test": "landscape dark dimensions, source mapping, png"
+  },
+  {
+    "pass": true,
+    "test": "landscape dark reset"
+  },
+  {
+    "pass": true,
+    "test": "landscape white roundtrip"
+  },
+  {
+    "pass": true,
+    "test": "portrait light dimensions, source mapping, png"
+  },
+  {
+    "pass": false,
+    "test": "portrait light reset"
+  },
+  {
+    "pass": true,
+    "test": "portrait dark dimensions, source mapping, png"
+  },
+  {
+    "pass": true,
+    "test": "portrait dark reset"
+  },
+  {
+    "pass": true,
+    "test": "portrait white roundtrip"
+  }
+]

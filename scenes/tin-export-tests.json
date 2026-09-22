@@ -1,0 +1,82 @@
+[
+  {
+    "bytes": 552011,
+    "key": "tin1",
+    "pass": true,
+    "product": "tinHorizontal"
+  },
+  {
+    "bytes": 179525,
+    "key": "tin2",
+    "pass": true,
+    "product": "tinHorizontal"
+  },
+  {
+    "bytes": 1613635,
+    "key": "tin3",
+    "pass": true,
+    "product": "tinHorizontal"
+  },
+  {
+    "bytes": 768751,
+    "key": "tin4",
+    "pass": true,
+    "product": "tinHorizontal"
+  },
+  {
+    "bytes": 1495031,
+    "key": "tin5",
+    "pass": true,
+    "product": "tinHorizontal"
+  },
+  {
+    "bytes": 450953,
+    "key": "tin1",
+    "pass": true,
+    "product": "tinVertical"
+  },
+  {
+    "bytes": 250138,
+    "key": "tin2",
+    "pass": true,
+    "product": "tinVertical"
+  },
+  {
+    "bytes": 1630995,
+    "key": "tin3",
+    "pass": true,
+    "product": "tinVertical"
+  },
+  {
+    "bytes": 721257,
+    "key": "tin4",
+    "pass": true,
+    "product": "tinVertical"
+  },
+  {
+    "bytes": 1392818,
+    "key": "tin5",
+    "pass": true,
+    "product": "tinVertical"
+  },
+  {
+    "pass": true,
+    "product": "landscape",
+    "regression": true
+  },
+  {
+    "other": true,
+    "pass": true,
+    "product": "landscape"
+  },
+  {
+    "pass": false,
+    "product": "portrait",
+    "regression": true
+  },
+  {
+    "other": true,
+    "pass": true,
+    "product": "portrait"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "name": "landscape/black/遮罩外无图案",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "landscape/black/内部无灰白漏点",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "landscape/red/遮罩外无图案",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "landscape/red/内部无灰白漏点",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "landscape/checker/遮罩外无图案",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "landscape/缩放",
+    "pass": true
+  },
+  {
+    "name": "landscape/旋转",
+    "pass": true
+  },
+  {
+    "name": "landscape/复位",
+    "pass": true
+  },
+  {
+    "name": "landscape/导出是效果非遮罩",
+    "pass": true
+  },
+  {
+    "name": "landscape/导出版本名",
+    "pass": true
+  },
+  {
+    "name": "landscape/查看图层恢复",
+    "pass": true
+  },
+  {
+    "name": "portrait/black/遮罩外无图案",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "portrait/black/内部无灰白漏点",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "portrait/red/遮罩外无图案",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "portrait/red/内部无灰白漏点",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "portrait/checker/遮罩外无图案",
+    "pass": true,
+    "badPixels": 0
+  },
+  {
+    "name": "portrait/缩放",
+    "pass": true
+  },
+  {
+    "name": "portrait/旋转",
+    "pass": true
+  },
+  {
+    "name": "portrait/复位",
+    "pass": true
+  },
+  {
+    "name": "portrait/导出是效果非遮罩",
+    "pass": true
+  },
+  {
+    "name": "portrait/导出版本名",
+    "pass": true
+  },
+  {
+    "name": "portrait/查看图层恢复",
+    "pass": true
+  }
+]

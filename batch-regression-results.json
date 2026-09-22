@@ -1,0 +1,12 @@
+{
+  "all": {
+    "success": 82,
+    "total": 82
+  },
+  "cancel": {
+    "done": 1,
+    "success": 1,
+    "total": 82
+  },
+  "failureContinues": true
+}

@@ -1,0 +1,247 @@
+[
+  {
+    "bytes": 320502,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame1"
+  },
+  {
+    "bytes": 495705,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame2"
+  },
+  {
+    "bytes": 814337,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame3"
+  },
+  {
+    "bytes": 386292,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame4"
+  },
+  {
+    "bytes": 693454,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame5"
+  },
+  {
+    "bytes": 653890,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame6"
+  },
+  {
+    "bytes": 920286,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame7"
+  },
+  {
+    "bytes": 1172046,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "frame8"
+  },
+  {
+    "bytes": 442934,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe1"
+  },
+  {
+    "bytes": 438373,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe2"
+  },
+  {
+    "bytes": 551463,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe3"
+  },
+  {
+    "bytes": 947917,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe4"
+  },
+  {
+    "bytes": 718060,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe5"
+  },
+  {
+    "bytes": 1014643,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe6"
+  },
+  {
+    "bytes": 881027,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe7"
+  },
+  {
+    "bytes": 1772342,
+    "pass": true,
+    "product": "posterVertical",
+    "scene": "unframe8"
+  },
+  {
+    "pass": true,
+    "product": "posterVertical",
+    "test": "main-face-drag-coordinates-and-reset",
+    "uv": [
+      0.4825680181698629,
+      0.5036193969757895
+    ]
+  },
+  {
+    "bytes": 273579,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame1"
+  },
+  {
+    "bytes": 455191,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame2"
+  },
+  {
+    "bytes": 609589,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame3"
+  },
+  {
+    "bytes": 827038,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame4"
+  },
+  {
+    "bytes": 826034,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame5"
+  },
+  {
+    "bytes": 533123,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame6"
+  },
+  {
+    "bytes": 602548,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame7"
+  },
+  {
+    "bytes": 600113,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "frame8"
+  },
+  {
+    "bytes": 454381,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe1"
+  },
+  {
+    "bytes": 439313,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe2"
+  },
+  {
+    "bytes": 911691,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe3"
+  },
+  {
+    "bytes": 1096274,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe4"
+  },
+  {
+    "bytes": 567306,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe5"
+  },
+  {
+    "bytes": 924619,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe6"
+  },
+  {
+    "bytes": 773386,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe7"
+  },
+  {
+    "bytes": 1177740,
+    "pass": true,
+    "product": "posterHorizontal",
+    "scene": "unframe8"
+  },
+  {
+    "pass": true,
+    "product": "posterHorizontal",
+    "test": "main-face-drag-coordinates-and-reset",
+    "uv": [
+      0.4513179844222122,
+      0.5429609793038563
+    ]
+  },
+  {
+    "pass": true,
+    "product": "landscape",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "portrait",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "cup",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "blanketVertical",
+    "test": "regression"
+  },
+  {
+    "pass": true,
+    "product": "blanketHorizontal",
+    "test": "regression"
+  }
+]

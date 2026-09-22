@@ -1,0 +1,42 @@
+[
+  {
+    "maxChannelDifference": 0,
+    "pass": true,
+    "test": "landscape light rotate/reset pixel tolerance"
+  },
+  {
+    "bytes": 1049448,
+    "pass": true,
+    "test": "landscape light real export handler"
+  },
+  {
+    "maxChannelDifference": 0,
+    "pass": true,
+    "test": "landscape dark rotate/reset pixel tolerance"
+  },
+  {
+    "bytes": 1281698,
+    "pass": true,
+    "test": "landscape dark real export handler"
+  },
+  {
+    "maxChannelDifference": 0,
+    "pass": true,
+    "test": "portrait light rotate/reset pixel tolerance"
+  },
+  {
+    "bytes": 846073,
+    "pass": true,
+    "test": "portrait light real export handler"
+  },
+  {
+    "maxChannelDifference": 0,
+    "pass": true,
+    "test": "portrait dark rotate/reset pixel tolerance"
+  },
+  {
+    "bytes": 821856,
+    "pass": true,
+    "test": "portrait dark real export handler"
+  }
+]

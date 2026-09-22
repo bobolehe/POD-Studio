@@ -1,0 +1,52 @@
+[
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "template": "tin1"
+  },
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "template": "tin2"
+  },
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "template": "tin3"
+  },
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "template": "tin4"
+  },
+  {
+    "pass": true,
+    "product": "tinHorizontal",
+    "template": "tin5"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "template": "tin1"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "template": "tin2"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "template": "tin3"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "template": "tin4"
+  },
+  {
+    "pass": true,
+    "product": "tinVertical",
+    "template": "tin5"
+  }
+]

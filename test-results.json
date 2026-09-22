@@ -1,0 +1,38 @@
+[
+  {
+    "name": "底图加载",
+    "ok": true
+  },
+  {
+    "name": "横版合成",
+    "ok": true
+  },
+  {
+    "name": "竖版切换",
+    "ok": true
+  },
+  {
+    "name": "缩放",
+    "ok": true
+  },
+  {
+    "name": "边界限制",
+    "ok": true
+  },
+  {
+    "name": "旋转",
+    "ok": true
+  },
+  {
+    "name": "重置",
+    "ok": true
+  },
+  {
+    "name": "无效格式提示",
+    "ok": true
+  },
+  {
+    "name": "导出按钮",
+    "ok": true
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "first": {
+    "total": 4000,
+    "done": 4000,
+    "success": 4000,
+    "skipped": 0,
+    "failed": 0,
+    "stopped": false
+  },
+  "second": {
+    "total": 4000,
+    "done": 4000,
+    "success": 0,
+    "skipped": 4000,
+    "failed": 0,
+    "stopped": false
+  },
+  "interrupted": {
+    "total": 4000,
+    "done": 3,
+    "success": 3,
+    "skipped": 0,
+    "failed": 0,
+    "stopped": true
+  },
+  "fail": {
+    "total": 8,
+    "done": 8,
+    "success": 7,
+    "skipped": 0,
+    "failed": 1,
+    "stopped": false
+  },
+  "kind": "queue test with in-memory filesystem and mock renderer"
+}

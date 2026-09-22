@@ -1,0 +1,16 @@
+from pathlib import Path
+p=Path(r'D:\codex\聚鼎设计页功能调研');s=(p/'index.before-v5.html').read_text(encoding='utf-8-sig')
+a=s.index('// One coverage mask');b=s.index('function render()',a)
+s=s[:a]+(p/'template-v5.js').read_text(encoding='utf-8-sig')+'\n'+s[b:]
+s=s.replace('ctx.clearRect(0,0,1000,1000);ctx.drawImage(p.img,0,0,1000,1000);if(!art){', "if(!art){TemplateRenderer.draw(ctx,p,null,{view:$('#layerView').value});")
+s=s.replace('drawWarp(p);', "TemplateRenderer.draw(ctx,p,surface,{wrap:$('#wrap').checked,view:$('#layerView').value});")
+s=s.replace('>实时预览</span>', '>V5 · 分层模板待验收</span>')
+s=s.replace('<canvas id="preview"', '<label style="width:100%;font-size:13px">查看图层 <select id="layerView"><option value="effect">合成效果</option><option value="mask">独立轮廓遮罩</option><option value="light">独立光影</option><option value="shadow">独立投影</option></select></label><canvas id="preview"')
+s=s.replace("$('#wrap').onchange=render;", "$('#wrap').onchange=render;$('#layerView').onchange=render;")
+s=s.replace("if(!art||!ready)return;render();canvas.toBlob", "if(!art||!ready)return;const previousView=$('#layerView').value;$('#layerView').value='effect';render();canvas.toBlob")
+s=s.replace("id+'-mockup.png'", "id+'-mockup-v5.png'")
+s=s.replace("},'image/png')};", "},'image/png');$('#layerView').value=previousView;render()};")
+s=s.replace('透视、侧面宽度及光影按实测近似，不代表生产包边尺寸。','独立重建轮廓、光影与投影；非聚鼎原始分层模板，不代表生产包边尺寸。')
+s=s.replace('查看与聚鼎的同图对比','历史聚鼎对比').replace('<footer>', '<footer><a href="acceptance-v5.html" target="_blank" style="color:#2868d7">V5 验收图册</a> · ')
+(p/'index.v5-generated.html').write_text(s,encoding='utf-8')
+print('V5 independent layers integrated')

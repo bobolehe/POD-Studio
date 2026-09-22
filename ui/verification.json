@@ -1,0 +1,22 @@
+{
+  "index.html": {
+    "scripts_unchanged": true,
+    "control_ids_unchanged": true,
+    "active_nav": 1
+  },
+  "product-batch.html": {
+    "scripts_unchanged": true,
+    "control_ids_unchanged": true,
+    "active_nav": 1
+  },
+  "batch.html": {
+    "scripts_unchanged": true,
+    "control_ids_unchanged": true,
+    "active_nav": 1
+  },
+  "listing.html": {
+    "scripts_unchanged": true,
+    "control_ids_unchanged": true,
+    "active_nav": 1
+  }
+}

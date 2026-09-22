@@ -1,0 +1,12 @@
+[
+  {
+    "product": "portrait",
+    "outside_corner_pixels_changed": 0,
+    "pass_test": true
+  },
+  {
+    "product": "landscape",
+    "outside_corner_pixels_changed": 0,
+    "pass_test": true
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "pass": true,
+    "product": "landscape",
+    "test": "main group"
+  },
+  {
+    "pass": true,
+    "product": "landscape",
+    "test": "other group"
+  },
+  {
+    "pass": true,
+    "product": "portrait",
+    "test": "main group"
+  },
+  {
+    "pass": true,
+    "product": "portrait",
+    "test": "other group"
+  }
+]
