@@ -18,3 +18,5 @@ listing/source-schema.json
 listing/ca-source-schema.json
 listing/*comparison.json
 listing/source-preview.png
+
+local-archive/
